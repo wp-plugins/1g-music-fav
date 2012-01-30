@@ -3,7 +3,7 @@ Contributors: 1g1g.info, 1g1g.com
 Tags: 1g1g, music, fav
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable Tag: 1.0
+Stable Tag: 1.1
 
 This plugin gives you a widget that you can share your 1g1g.com music fav data to your visitor.
 
