@@ -3,7 +3,7 @@
 Plugin Name:1g-music-fav
 Plugin URI: http://blog.1g1g.info/wp-plugin/
 Description: This plugin gives you a widget that you can share your 1g1g.com music fav data to your visitor. 这个插件提供了一个小工具，您可以用它来向您的访客展现您在亦歌的音乐收藏数据。
-Version: 1.0
+Version: 1.1
 Author: Ye Xiaoxing
 Author URI: http://blog.1g1g.info/
 */
@@ -19,7 +19,7 @@ class Fav1g_Widget extends WP_Widget {
     extract($args);   
           	if (function_exists('curl_init')){
             $ch=curl_init();
-            curl_setopt($ch, CURLOPT_URL, "http://www.micromacer.com/getfavwidget.php?user=".$instance['user']);
+            curl_setopt($ch, CURLOPT_URL, "http://1gwp.sinaapp.com/widget.php?user=".$instance['user']);
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_USERAGENT, '1gmusicfav-widget');
